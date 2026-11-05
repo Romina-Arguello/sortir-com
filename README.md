@@ -2,8 +2,23 @@
 
 Application web développée avec **Symfony 7.4** permettant à des étudiants/participants d'un même organisme (répartis sur plusieurs campus) de créer, consulter et s'inscrire à des sorties (activités, sorties culturelles, sportives, etc.).
 
+## Équipe et répartition des rôles
+
+Projet réalisé en équipe de trois dans le cadre de la formation Développeur Web et Web Mobile (ENI École Informatique), du 27/07/2026 au 07/08/2026.
+
+| Rôle | Membre | Principales réalisations |
+|---|---|---|
+| Développeuse A | Valérie LAFOUASSE | Authentification (connexion, déconnexion), profil utilisateur (consultation, modification, mot de passe, photo), validation des données des participants, contrôle d'accès aux routes, blocage des comptes inactifs |
+| Développeur B | Kentin PARENT-BERT | CRUD des sorties (création, modification, suppression, annulation), cycle de vie automatique des sorties (`SortieStateManager`), back-office administrateur (utilisateurs, campus, villes), optimisation des requêtes, intégration des branches |
+| Développeuse C | Romina DEVOS ARGUELLO | Page d'accueil avec liste des sorties et filtres combinables (`SortieRepository`), page de détail d'une sortie, inscription et désistement selon l'état de la sortie, campus proposé automatiquement, filtrage dynamique des lieux selon la ville (route API + `FormEvents` + JavaScript), responsive de l'application avec Bootstrap |
+
+Organisation : une branche Git par fonctionnalité, des branches d'intégration par itération et des réunions de synchronisation régulières.
+
+> Ce dépôt est un fork de [KentinPB/Sortir](https://github.com/KentinPB/Sortir). L'historique complet est conservé : chaque commit reste attribué à son auteur.
+
 ## Sommaire
 
+- [Équipe et répartition des rôles](#équipe-et-répartition-des-rôles)
 - [Fonctionnalités](#fonctionnalités)
 - [Stack technique](#stack-technique)
 - [Prérequis](#prérequis)
